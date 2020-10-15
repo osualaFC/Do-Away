@@ -23,17 +23,13 @@ const initialMessages =[
         desc:"D3",
         image: require("../assets/jacket.jpg")
     },
-    {
-        id:4,
-        title:"T4",
-        desc:"D4",
-        image: require("../assets/jacket.jpg")
-    }
+    
 ]
 
 function MessagesScreen(props) {
 
     const [messages, setMessages] = useState(initialMessages);
+    const [refreshing, setRefreshing] = useState(false)
 
     const handleDelete= message =>{
         //Delete message from messages array
@@ -56,6 +52,17 @@ function MessagesScreen(props) {
         />
         )}
         ItemSeparatorComponent ={ListItemSeparator}
+        refreshing={refreshing}
+        onRefresh={() =>{
+            setMessages([
+                {
+                    id:4,
+                    title:"T4",
+                    desc:"D4",
+                    image: require("../assets/jacket.jpg")
+                },
+            ])
+        }}
         />
         </SafeAreaView>
     );
