@@ -3,5 +3,6 @@ export default{
     secondary:"#4ecde4",
     colorTextPrimary:"#000",
     colorTextSecondary:"#fff",
-    colorGrey:"#6e6969"
+    colorGrey:"#6e6969",
+    colorLight:"#fafafa"
 }
