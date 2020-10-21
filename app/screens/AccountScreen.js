@@ -21,7 +21,7 @@ const menuItems = [
       name: "email",
       backgroundColor: colors.secondary,
     },
-    targetScreen: "Messages";
+    targetScreen: "Messages"
   },
 ];
 
